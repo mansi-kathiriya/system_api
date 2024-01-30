@@ -25,9 +25,9 @@ const facultySchema = new mongoose.Schema(
         phone_no: {
             type: Number
         },
-        student: {
+        admin: {
             type: mongoose.Types.ObjectId,
-            ref: "student"
+            ref: "admin"
         },
         is_active: {
             type: Boolean,

@@ -6,8 +6,6 @@ const createAdmin = async (reqBody) => {
 
 const getAdminList = async (filter, options) => {
     return Admin.find()
-        .populate("faculty")
-        .populate("student")
 };
 
 const getAdminByEmail = async (email) => {

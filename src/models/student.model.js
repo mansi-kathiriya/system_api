@@ -21,6 +21,14 @@ const studentSchema = new mongoose.Schema(
         phone_no: {
             type: Number
         },
+        faculty: {
+            type: mongoose.Types.ObjectId,
+            ref: "faculty"
+        },
+        admin: {
+            type: mongoose.Types.ObjectId,
+            ref: "admin"
+        },
         is_active: {
             type: Boolean,
             default: true

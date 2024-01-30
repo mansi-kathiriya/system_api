@@ -5,7 +5,7 @@ const createFaculty = async (reqBody) => {
 };
 
 const getFacultyList = async (filter, options) => {
-    return Faculty.find().populate("student")
+    return Faculty.find().populate("admin")
 };
 
 const getFacultyByEmail = async (email) => {

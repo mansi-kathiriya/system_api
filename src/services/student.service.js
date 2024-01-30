@@ -6,6 +6,8 @@ const createStudent = async (reqBody) => {
 
 const getStudentList = async (filter, options) => {
     return Student.find()
+        .populate("faculty")
+        .populate("admin")
 };
 
 const getStudentByEmail = async (email) => {
